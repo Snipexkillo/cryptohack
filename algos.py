@@ -89,4 +89,18 @@ def Tonneli_Shanks(a, p): #finds r for r^2 = a (mod p)
         Root = Root * b % p
     return Root
 
+def rootn(x, n): # calculates nth root of x using
+    high = 1
+    while pow(high, n) < x:
+        high = pow(high, 2)
+    low = high//2
 
+    while low<high:
+        mid = (low + high)//2
+        if low < mid and pow(mid, n) < x:
+            low = mid
+        elif high > mid and pow(mid, n) > x:
+            high = mid
+        else:
+            return mid
+    return mid + 1
