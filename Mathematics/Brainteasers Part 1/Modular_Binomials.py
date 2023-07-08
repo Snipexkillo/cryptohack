@@ -1,5 +1,5 @@
 from sympy.ntheory.factor_ import totient
-import greatest_common_divisor as e
+import algos as e
 
 #N = p*q
 #c1 = (2*p + 3*q)**e1 mod N

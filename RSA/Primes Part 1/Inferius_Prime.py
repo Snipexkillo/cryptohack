@@ -1,4 +1,4 @@
-import primefac, greatest_common_divisor, math
+import primefac, algos, math
 from Crypto.Util.number import long_to_bytes, bytes_to_long
 
 n = 742449129124467073921545687640895127535705902454369756401331
